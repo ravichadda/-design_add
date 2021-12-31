@@ -38,11 +38,12 @@ module.exports = {
     globalObject: 'this',
     library: 'strapiDs',
     umdNamedDefine: true,
+    babelrc: true,
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: [/(node_modules)/],
         use: {
           loader: 'babel-loader',
@@ -69,11 +70,11 @@ module.exports = {
       'react-router-dom': 'react-router-dom',
       'styled-components': 'styled-components',
     },
-    /^@strapi\/icons/,
+    /^@add\/icons/,
   ],
   resolve: {
     alias: {
-      '@strapi/icons': path.dirname(require.resolve('../strapi-icons/dist')),
+      '@add/icons': path.dirname(require.resolve('../strapi-icons/dist')),
     },
   },
 };
