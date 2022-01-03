@@ -4,7 +4,7 @@ import { VisuallyHidden } from '../VisuallyHidden';
 import { DatePickerPopover } from './components';
 import { SimpleMenu, MenuItem } from '../SimpleMenu';
 import { Flex } from '../Flex';
-import { Box } from '../Box';
+import { Box } from '../../Box';
 import { RawTable, RawThead, RawTbody, RawTr } from '../RawTable';
 import { DatePickerTh } from './DatePickerTh';
 import { DatePickerTd } from './DatePickerTd';
